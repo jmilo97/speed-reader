@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/reader.js"></script>
+    <script src="js/jquery.timer.js"></script>
+    <script src="js/meter.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>تندخوان</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">تندخوان</h1>
+    </header>
+    <aside id="sidebar">
+        <nav>
+            <li><i id="homei" class="nav-icon" class="disable-select">&#xe800;</i></li>
+            <li><i id="readeri" class="nav-icon" class="disable-select">&#xf197;</i></li>
+            <li><i id="meteri" class="nav-icon" class="disable-select">&#xf0e4;</i></li>
+            <li><i id="abouti" class="nav-icon" class="disable-select">&#xe801;</i></li>
+        </nav>
+    </aside>
+
+    <article id="home">
+        <p></p>
+    </article>
+    <article id="reader">
+        <textarea id="text-to-read">لژیون آزاد عربی یک واحد از نیروهای ورماخت آلمان نازی بود که از داوطلبانِ عرب در خاورمیانه و شمال آفریقا تشکیل شده بود.</textarea>
+        <div id="reading-screen">
+            <div id="word"></div>
+            <input id="text-progress" type="range" />
+        </div>
+        <div id="options">
+            <div class="row">
+                <div>
+                    <span id="wpm">واژه بر دقیقه (WPM):</span>
+                    <input id="reading-speed" type="number" value="200" step="25" min="0" max="1000" />
+                </div>
+                <span id="text-info"></span>
+            </div>
+            <div class="row">
+                <label for="merge" title="واژگان کم‌تر از چهار حرف را با واژهٔ قبلیشان نشان می‌دهد.">واژگان
+                    کوتاه:</label>
+                <input id="merge" class="checkmark" type="checkbox" checked="true"
+                    title="واژگان کم‌تر از چهار حرف را با واژهٔ قبلیشان نشان می‌دهد." />
+            </div>
+
+        </div>
+        <button class="btn" id="start">بخوان!</button>
+        <button class="btn" id="new">متن جدید</button>
+        </div>
+        <div id="other">
+            <div id="desc">
+                <p>میانبرها:</p>
+                <ul>
+                    <li><em>P</em> یا <em>فاصله</em>: توقف/از سرگیری</li>
+                    <li>فلش <em>چپ</em>: ۲۵ واحد از سرعت کم می‌کند.</li>
+                    <li>فلش <em>راست</em> : ۲۵ واحد به سرعت می‌افزاید.</li>
+                    <li><em>B</em>: ده واژه به عقب می‌رود.</li>
+                </ul>
+            </div>
+
+    </article>
+    <article id="meter">
+        <div class="container">
+            <div id="text-container">
+                <button id="begin" class="btn">شروع</button>
+                <p id="text">لاله سرده‌ای از تیرهٔ سوسنیان است که در حدود ۱۰۰ تا ۱۵۰ گونه دارد. محلّ اصلی رویش لالهٔ خودرو در آسیای مرکزی در نظر گرفته می‌شود. این گل در افغانستان، ترکیه، ایران، قسمتی از غرب سوریه، سواحل دریاچه آرال، دریاچه خزر و دریای سیاه، یونان، ایتالیا، اسپانیا و سواحل دریای مدیترانه در شمال آفریقا بصورت خودرو یافت می‌شود. در بین کشورهای اسلامی لاله در فرهنگ دو کشور ایران و ترکیه نفوذ عمیقی دارد. ۱۹ گونه از گونه‌های لاله از ایران گزارش شده‌است. از لحاظ گیاه‌شناسی لاله به دو گروه بزرگ پرورشی و خودرو تقسیم می‌شود. لاله‌های پرورشی دارای گل‌های بزرگ، جام گل بزرگ‌تر و تنوع رنگی بیشتری نسبت به گل‌های خودرو هستند. لاله‌ها بطورکلی در چهار طبقهٔ کلیِ زود گل‌دهنده، میان‌رس، دیر گل‌دهنده و گونه‌ها قرار می‌گیرند. از سال ۱۹۸۱ تقسیم‌بندی گل‌های لاله توسط انجمن سلطنتی پیاز لاله هلند آغاز شد و لاله‌ها بر اساس شکل گیاه و شکل و زمان باز شدن گل به ۱۵ گروه تقسیم شدند. از طریق درآوردن پیاز بوته اصلی از خاک و جدا کردن پیازچه‌های نوچه اطراف پیاز مادری و کاشت بذر کاملاً تازه ارقام جدید تکثیر و ازدیاد می‌شوند.</p>
+                <button id="finish" class="btn">پایان</button>
+            </div>
+        </div>
+        <div id="final" class="container"></div>
+    </article>
+    <article id="about">
+        <h2>دربارهٔ من</h2>
+        <h6>یا همین سایت</h6>
+        <p>من میلاد جمالی هستم و این وب‌اپ رو برای سرگرمی و یادگیری ساختم.
+             این یک نرم‌افزار آزاده و بخش خوانش آن براساس <a href="https://github.com/ofalvai/speed-reader">این</a> ریپوزیتوری 
+             ساخته شده.
+        </p>
+        <a class="icon" href="mailto:jmilo@tutanota.com">&#xf0e0;</a>
+        <a class="icon" href="https://github.com/jmilo97/speed-reader">&#xf300;</a>
+        <a class="icon" href="t.me/jmilo97">&#xf2c6;</a>
+    </article>
+</body>
+
+</html>

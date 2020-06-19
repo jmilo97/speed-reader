@@ -1,0 +1,362 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0;
+    font: inherit;
+    margin: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?5012090');
+    src: url('../font/fontello.eot?5012090#iefix') format('embedded-opentype'), url('../font/fontello.woff2?5012090') format('woff2'), url('../font/fontello.woff?5012090') format('woff'), url('../font/fontello.ttf?5012090') format('truetype'), url('../font/fontello.svg?5012090#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NazliRegular';
+    src: url('../font/nazli.ttf'), url('../font/nazlib.ttf');
+}
+
+body, html {
+    background: #f8f8f8;
+    color: #111111;
+    font-size: 16px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'NazliRegular';
+}
+
+p {
+    line-height: 1.5em;
+    margin: 10px 0;
+    padding: 0 5px;
+}
+
+em {
+    font-weight: normal;
+    color: rgb(90, 0, 180);
+}
+
+.nav-icon {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    margin-bottom: 50%;
+    text-align: center;
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+    /* You can be more comfortable with increased icons size */
+    font-size: 32px;
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    background-color: rgb(90, 0, 180);
+    color: #fff;
+    padding-bottom: 5px;
+}
+
+#title {
+    text-align: right;
+    margin-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 28px;
+}
+
+nav {
+    background-color: rgb(25, 25, 30);
+    color: rgb(230, 230, 230);
+    padding-top: 10px;
+    height: 100%;
+    width: 50px;
+    position: absolute;
+}
+
+nav:hover {
+    cursor: default;
+}
+
+.nav-icon:hover {
+    color: rgb(180, 180, 180);
+}
+
+header:hover {
+    cursor: default;
+}
+
+article {
+    margin: 10%;
+}
+
+input[type=range] {
+    width: 100%;
+    margin: 2px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: #5a00b4;
+    border: 0.1px solid #010101;
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    margin-top: -2.1px;
+    width: 0px;
+    height: 12px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 180, 0);
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #7300e7;
+}
+
+input[type=range]::-moz-range-track {
+    background: #5a00b4;
+    border: 0.1px solid #010101;
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 0px;
+    height: 12px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 180, 0);
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 3px 0;
+    color: transparent;
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #400081;
+    border: 0.1px solid #010101;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #5a00b4;
+    border: 0.1px solid #010101;
+}
+
+input[type=range]::-ms-thumb {
+    width: 0px;
+    height: 12px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 180, 0);
+    cursor: pointer;
+    margin-top: 0px;
+    /*Needed to keep the Edge thumb centred*/
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #5a00b4;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #7300e7;
+}
+
+/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+  how to remove the virtical space around the range input in IE*/
+
+@supports (-ms-ime-align:auto) {
+    /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+    input[type=range] {
+        margin: 0;
+        /*Edge starts the margin from the thumb, not the track as other browsers do*/
+    }
+}
+
+p {
+    line-height: 1.5em;
+    margin: 10px 0;
+    padding: 0 5px;
+}
+
+em {
+    font-weight: normal;
+    color: rgb(90, 0, 180);
+}
+
+#text-to-read {
+    width: 960px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(25, 25, 30);
+    background: #fff;
+    font-size: 18px;
+    color: rgb(25, 25, 30);
+    line-height: 1.5em;
+    resize: none;
+    font-family: 'NazliRegular';
+}
+
+#reading-screen {
+    display: none;
+    width: 960px;
+    height: 250px;
+    position: relative;
+}
+
+#word {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    font-size: 72px;
+    word-break: break-all;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 30%;
+}
+
+#options {
+    margin: 10px 0;
+}
+
+.row {
+    height: 30px;
+}
+
+#text-progress {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#new {
+    display: none;
+}
+
+.btn {
+    width: 100px;
+    padding: 7px 20px;
+    margin-right: 20px;
+    border: 1px solid rgb(50, 0, 140);
+    border-radius: 3px;
+    background: rgb(90, 0, 180);
+    color: #fff;
+    cursor: pointer;
+    font-family: 'NazliRegular';
+    font-family: 24px;
+}
+
+.btn:hover {
+    background: rgb(90, 0, 180);
+}
+
+.btn:active {
+    background: rgb(90, 0, 180);
+}
+
+li {
+    margin-left: 30px;
+    list-style-type: circle;
+    line-height: 1.5em;
+}
+
+#text-info {
+    float: right;
+}
+
+.icon {
+    font-family: 'fontello';
+    color: rgb(50, 0, 140);
+}
+
+.icon:active {
+    color: rgb(90, 0, 180);
+}
+
+.icon:visited {
+    color: rgb(50, 0, 140);
+}
+
+.hidden {
+    display: none;
+}
+/* Responsive styles */
+
+@media (max-width: 650px) {
+    article {
+        width: auto;
+        margin-top: 0;
+        border-radius: 0;
+    }
+    #text-to-read, #reading-screen {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+    }
+    #other {
+        width: auto;
+        margin: 0;
+    }
+    #word {
+        font-size: 50px;
+    }
+}
