@@ -336,6 +336,10 @@ li {
     color: rgb(50, 0, 140);
 }
 
+h2 {
+    font-size: 28px;
+}
+
 .hidden {
     display: none;
 }
